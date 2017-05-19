@@ -1,0 +1,44 @@
+<!-- - Developed by: Arun Thayanithy
+	 S.N. - 100887220
+	 Course - COMP 2406
+	 Assignment 3
+	 Date : March 16th, 2017
+
+	 favicon courtesy of Facebook messenger's favicon. 
+	 test2.png taken from: https://www.nomachine.com/forums/images/shared/log-in-icon-mini.png.
+-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf8"/>
+		<title>Web Chat</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+			 rel = "stylesheet">
+		<script src="./scripts.js"></script>
+	</head>
+	<body>
+		<div id="dialog" title="Basic dialog">
+		</div>
+		<div id=programbar>
+			<h2> NSA Free Chat </h2>
+		</div>
+		<div id="wrapper">
+			<div id="chatLogDiv">
+			<textarea id="chatLog"></textarea>
+			</div>
+			<div id="userListDiv">
+				<h2>Users:</h2>
+				<div id="table-wrapper">
+				<table id="userLister">
+				</table>
+				</div>
+			</div>
+			<input id="inputText" placeholder="Enter your message here...">
+		</div>
+		<div id="hello"></div>
+	</body>
+</html>
