@@ -1,8 +1,4 @@
 /*Developed by: Arun Thayanithy
-	 S.N. - 100887220
-	 Course - COMP 2406
-	 Assignment 3
-	 Date : March 16th, 2017
 */
 
 var temp;
