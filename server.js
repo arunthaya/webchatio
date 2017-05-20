@@ -95,30 +95,6 @@ io.on("connection", function(socket){
 		var toNotSendArray = [];
 		
 		
-		//console.log("Object keys is ", Object.keys(usersBlocked)[1]);
-		
-		/*var counter = 0;
-		//Attempt at bonus, it doesn't work
-		for(var i=0; i<usersBlocked.length; i++){
-			console.log("Counter is ", counter);
-			if(usersBlocked[i].indexOf(socket.username) != -1){
-				var temp = i;
-				var temp2 = Object.keys(usersBlocked)[i];
-				toNotSendArray.push(temp2);
-			}
-			counter++;
-		}
-
-		console.log("toNotSendArray is ", toNotSendArray);
-		
-		for(var i in clients){
-			if(toNotSendArray.indexOf(clients[i].username) == -1){
-				var temporary2 = clients[i].id;
-				io.to(temporary2).emit("message",timestamp()+", "+socket.username+": "+data);
-			}
-		} 
-		*/
-
 	});
 
 	//The following will be executed upon a privateMessage event from the client side, with the data being pushed from the client
